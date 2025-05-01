@@ -23,6 +23,8 @@
     "react-native-gesture-handler": "^2.24.0",
     "react-native-notifier": "^2.0.0",
     "react-native-safe-area-context": "^5.2.0",
+    "@react-native-vector-icons/common": "^11.0.0",
+    "@react-native-vector-icons/material-design-icons": "^7.4.47",
     "react-native-screens": "^4.7.0",
     "react-native-webview": "^13.13.5"
   },

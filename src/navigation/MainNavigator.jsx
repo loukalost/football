@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import LeaguesNavigator from './LeaguesNavigator'
 import CoachsNavigator from './CoachsNavigator'
-import TabBar from './Tabbar'
+import TabBar from './TabBar'
 
 const Tabs = createBottomTabNavigator()
 
