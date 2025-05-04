@@ -106,16 +106,6 @@ L'application utilise l'API [Football Data](https://www.football-data.org/) pour
 
 ---
 
-## Démonstration
-
-Ajoutez ici des captures d'écran ou des GIFs montrant l'application en action. Par exemple :
-
-- **Page d'accueil** : Affichage des matchs en direct.
-- **Classements** : Vue des classements des équipes.
-- **Recherche** : Fonctionnalité de recherche d'équipes ou de joueurs.
-
----
-
 ## Troubleshooting
 
 Si vous rencontrez des problèmes, consultez la section [Troubleshooting](https://reactnative.dev/docs/troubleshooting) ou ouvrez une issue sur le dépôt GitHub.
