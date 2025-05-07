@@ -1,9 +1,9 @@
 import { useCallback, useState } from 'react'
-import { FlatList, RefreshControl, Text } from 'react-native'
+import { FlatList, RefreshControl, Text, TouchableOpacity } from 'react-native'
 import LeaguesListItem from './LeaguesListItem'
 import { leaguesListStyle as styles } from './LeaguesListStyle'
 
-function LeaguesList ({ leagues, onRefresh }) {
+function LeaguesList({ leagues, onRefresh, navigation }) {
   const [refreshing, setRefreshing] = useState(false)
 
   const onRefreshList = useCallback(async () => {
@@ -14,7 +14,7 @@ function LeaguesList ({ leagues, onRefresh }) {
 
   if (!leagues.competitions || leagues.competitions.length < 1) return <Text>No leagues data</Text>
 
-  const filteredLeagues = leagues.filter(league => league.emblem)
+  const filteredLeagues = leagues.competitions?.filter(league => league.emblem) || []
 
   return (
     <FlatList
@@ -25,7 +25,9 @@ function LeaguesList ({ leagues, onRefresh }) {
       }
       data={filteredLeagues}
       renderItem={({ item }) => (
-        <LeaguesListItem league={item} />
+        <TouchableOpacity onPress={() => navigation.navigate('LeagueDetail', { code: item.code })}>
+          <LeaguesListItem league={item} />
+        </TouchableOpacity>
       )}
       contentContainerStyle={styles.container}
     />

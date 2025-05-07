@@ -31,4 +31,21 @@ const getLeagues = async () => {
   }
 }
 
-export { getLeagues }
+const getLeagueByCode = async (code) => {
+  try {
+    const response = await api.get(`/competitions/${code}`)
+    return response.data
+  } catch (error) {
+    console.error('Erreur lors de la récupération de la ligue :', error)
+    Notifier.showNotification({
+      title: "Une erreur s'est produite",
+      description: `Erreur réseau, vérifiez votre connexion internet\n${error.message}`,
+      Component: NotifierComponents.Alert,
+      componentProps: {
+        alertType: 'error'
+      }
+    })
+  }
+}
+
+export { getLeagues, getLeagueByCode }

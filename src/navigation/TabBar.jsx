@@ -9,7 +9,7 @@ const icon = {
   Profile: 'account'
 }
 
-function TabBar ({ state, descriptors, navigation }) {
+function TabBar({ state, descriptors, navigation }) {
   const { buildHref } = useLinkBuilder()
 
   return (

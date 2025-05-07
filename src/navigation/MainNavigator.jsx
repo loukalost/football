@@ -4,7 +4,7 @@ import TabBar from './TabBar'
 
 const Tabs = createBottomTabNavigator()
 
-function MainNavigator () {
+function MainNavigator() {
   return (
     <Tabs.Navigator
       screenOptions={{
