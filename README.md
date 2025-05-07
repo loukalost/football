@@ -1,16 +1,14 @@
-# React Native Football
+# Football ⚽️
 
 ## Description du projet
 
-React Native Football est une application mobile développée avec React Native qui permet aux utilisateurs de consulter des informations sur les équipes, les matchs et les classements de football. Ce projet a été conçu pour offrir une expérience utilisateur fluide et intuitive, tout en exploitant les fonctionnalités natives des appareils mobiles.
+Cette application nommée **Football** (très original je sais) est une application mobile développée avec React Native qui permet aux utilisateurs de consulter des informations sur les ligues de football à travers le monde entier. Pour chaque ligue, on peut voir les matchs et le / les classements qui correspondent. Ce projet a été conçu pour offrir une expérience utilisateur fluide et intuitive, tout en exploitant les fonctionnalités natives des appareils mobiles (pour l'instant seulement sur Android).
 
 ---
 
 ## Technologies utilisées
 
 - **React Native** : Framework principal pour le développement mobile.
-- **TypeScript** : Langage utilisé pour un typage statique et une meilleure maintenabilité.
-- **Redux** (ou autre gestion d'état, si applicable) : Gestion de l'état global de l'application.
 - **Axios** : Pour les appels API.
 - **CocoaPods** : Gestionnaire de dépendances pour iOS.
 - **Metro** : Outil de bundling JavaScript pour React Native.
@@ -19,17 +17,14 @@ React Native Football est une application mobile développée avec React Native 
 
 ## Fonctionnalités principales
 
-- Affichage des matchs en direct et des résultats.
-- Consultation des classements des équipes.
-- Recherche d'équipes et de joueurs.
-- Notifications en temps réel pour les événements importants.
-- Interface utilisateur optimisée pour Android et iOS.
+- Affichage des différentes ligues à travers le monde (cela comprend les compétitions au format de tournoi type 'Coupe du monde', 'Copa America', etc...).
+- Interface utilisateur optimisée pour Android seulement (pour le moment ⏳).
 
 ---
 
 ## API utilisée
 
-L'application utilise l'API [Football Data](https://www.football-data.org/) pour récupérer les données en temps réel sur les matchs, les équipes et les classements.
+L'application utilise l'API [Football Data](https://www.football-data.org/) pour récupérer les données en temps réel sur les ligues, les équipes et l'ensemble des images de types logos et drapeaux.
 
 ---
 
@@ -47,8 +42,8 @@ L'application utilise l'API [Football Data](https://www.football-data.org/) pour
 1. Clonez le dépôt :
 
    ```sh
-   git clone https://github.com/votre-utilisateur/react-native-football.git
-   cd react-native-football
+   git clone https://github.com/loukalost/football.git
+   cd football
    ```
 
 2. Installez les dépendances JavaScript :
@@ -61,7 +56,7 @@ L'application utilise l'API [Football Data](https://www.football-data.org/) pour
    yarn install
    ```
 
-3. Installez les dépendances CocoaPods (pour iOS uniquement) :
+3. Installez les dépendances CocoaPods (**pour iOS uniquement**) :
 
    ```sh
    cd ios
@@ -103,6 +98,13 @@ L'application utilise l'API [Football Data](https://www.football-data.org/) pour
      # OU avec Yarn
      yarn ios
      ```
+
+---
+
+## Difficultés rencontrées
+
+Je n'ai pas réussi à mettre en place le système de navigation que j'avais pourtant compris en cours mais je me suis emmêlé les pinceaux entre le cours, ce que me proposait Copilot et ce que j'avais compris.
+Je prendrais le temps dès que j'en aurais de pousser ce projet un peu plus loin pour mieux comprendre les petites spécificités de React Native que j'ai eu du mal à assimiler.
 
 ---
 
